@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gimnasio San Román</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =================== NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+
+      <a href="#inicio" class="navbar__logo">
+        <span class="navbar__logo-icon">SR</span>
+        <span class="navbar__logo-text">Gimnasio <strong>San Román</strong></span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#inicio"   class="navbar__link navbar__link--active">Inicio</a></li>
+          <li class="navbar__item"><a href="#clases"   class="navbar__link">Clases</a></li>
+          <li class="navbar__item"><a href="#nosotros" class="navbar__link">Nosotros</a></li>
+          <li class="navbar__item"><a href="#contacto" class="navbar__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="btn btn--primary navbar__cta">Únete ahora</a>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__hamburger-bar"></span>
+        <span class="navbar__hamburger-bar"></span>
+        <span class="navbar__hamburger-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================== HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Bienvenido al origen</p>
+        <h1 class="hero__title">
+          FORJÁ<br/>
+          <span class="hero__title-accent">TU FUERZA</span>
+        </h1>
+        <p class="hero__subtitle">
+          Entrenamiento de élite. Comunidad real. Resultados que se notan.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Empezá hoy</a>
+          <a href="#clases" class="btn btn--ghost">Ver clases</a>
+        </div>
+      </div>
+
+      <div class="hero__shape" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================ STATS BAR ================== -->
+    <section class="stats" aria-label="Estadísticas">
+      <div class="stats__container">
+        <div class="stats__item">
+          <span class="stats__number">+450</span>
+          <span class="stats__label">Socios activos</span>
+        </div>
+        <div class="stats__divider" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__number">8</span>
+          <span class="stats__label">Disciplinas</span>
+        </div>
+        <div class="stats__divider" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__number">7+</span>
+          <span class="stats__label">Años de experiencia</span>
+        </div>
+        <div class="stats__divider" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__number">7-22</span>
+          <span class="stats__label">HRS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLASES ===================== -->
+    <section class="classes" id="clases">
+      <div class="classes__container">
+
+        <div class="section-header">
+          <p class="section-header__eyebrow">Lo que ofrecemos</p>
+          <h2 class="section-header__title">NUESTRAS CLASES</h2>
+        </div>
+
+        <div class="classes__grid">
+
+          <article class="class-card class-card--1">
+            <div class="class-card__icon" aria-hidden="true">💪</div>
+            <h3 class="class-card__title">Musculación</h3>
+            <p class="class-card__desc">
+              Equipamiento de última generación y guía personalizada para maximizar tu hipertrofia y fuerza.
+            </p>
+            <span class="class-card__tag">Todos los niveles</span>
+          </article>
+
+          <article class="class-card class-card--2">
+            <div class="class-card__icon" aria-hidden="true">🏋️</div>
+            <h3 class="class-card__title">CrossFit</h3>
+            <p class="class-card__desc">
+              Entrenamiento funcional de alta intensidad que desafía tu resistencia, velocidad y potencia.
+            </p>
+            <span class="class-card__tag">Intermedio / Avanzado</span>
+          </article>
+
+          <article class="class-card class-card--3">
+            <div class="class-card__icon" aria-hidden="true">🔥</div>
+            <h3 class="class-card__title">Funcional</h3>
+            <p class="class-card__desc">
+              Movimientos naturales, cuerpo libre y accesorios para mejorar tu performance en el día a día.
+            </p>
+            <span class="class-card__tag">Todos los niveles</span>
+          </article>
+
+          <article class="class-card class-card--4">
+            <div class="class-card__icon" aria-hidden="true">🧘</div>
+            <h3 class="class-card__title">Yoga</h3>
+            <p class="class-card__desc">
+              Flexibilidad, equilibrio mental y recuperación activa. El complemento perfecto para tu entrenamiento.
+            </p>
+            <span class="class-card__tag">Principiante / Medio</span>
+          </article>
+
+          <article class="class-card class-card--5">
+            <div class="class-card__icon" aria-hidden="true">🚴</div>
+            <h3 class="class-card__title">Spinning</h3>
+            <p class="class-card__desc">
+              Cardio explosivo en bici estática con música y un instructor que te lleva al límite.
+            </p>
+            <span class="class-card__tag">Todos los niveles</span>
+          </article>
+
+          <article class="class-card class-card--6">
+            <div class="class-card__icon" aria-hidden="true">🧎‍♀️</div>
+            <h3 class="class-card__title">Stretching</h3>
+            <p class="class-card__desc">
+              Actividad para descansar los musculos realizando estiramientos que los relajen. Previene dolores posteriores 
+            </p>
+            <span class="class-card__tag">Intermedio / Avanzado</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section class="about" id="nosotros">
+      <div class="about__container">
+
+        <div class="about__content">
+          <div class="section-header section-header--left">
+            <p class="section-header__eyebrow">Quiénes somos</p>
+            <h2 class="section-header__title">MÁS QUE<br/>UN GIMNASIO</h2>
+          </div>
+          <p class="about__text">
+            Gimnasio San Roman nació hace más de 7 años con una convicción simple: el deporte transforma vidas. Desde entonces, somos el espacio donde cientos de personas descubren su mejor versión, sin importar de dónde parten.
+          </p>
+          <p class="about__text">
+            Contamos con instalaciones modernas, profesionales certificados y una comunidad que te acompaña en cada etapa de tu proceso.
+          </p>
+
+          <div class="about__values">
+            <div class="about__value">
+              <span class="about__value-icon" aria-hidden="true">⚡</span>
+              <div>
+                <h4 class="about__value-title">Intensidad</h4>
+                <p class="about__value-desc">Damos el 100% en cada sesión.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <span class="about__value-icon" aria-hidden="true">🤝</span>
+              <div>
+                <h4 class="about__value-title">Comunidad</h4>
+                <p class="about__value-desc">Crecemos juntos, nadie se queda atrás.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <span class="about__value-icon" aria-hidden="true">🎯</span>
+              <div>
+                <h4 class="about__value-title">Resultados</h4>
+                <p class="about__value-desc">Metas claras, método probado.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <span class="about__value-icon" aria-hidden="true">🛡️</span>
+              <div>
+                <h4 class="about__value-title">Compromiso</h4>
+                <p class="about__value-desc">Estamos con vos desde el primer día.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__visual-block about__visual-block--main">
+            <span class="about__visual-text">FUERZA<br/>REAL</span>
+          </div>
+            <div class="about__visual-block about__visual-block--accent">
+              <span class="about__visual-year">Est.<br/>2009</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+
+        <div class="section-header">
+          <p class="section-header__eyebrow">Hablemos</p>
+          <h2 class="section-header__title">CONTACTO</h2>
+        </div>
+
+        <div class="contact__body">
+
+          <div class="contact__form-wrapper">
+            <form action="https://formsubmit.co/andressanroman6@gmail.com" method="POST" class="contact__form" id="contactForm" >
+
+              <div class="form-group">
+                <label class="form-group__label" for="name">Nombre completo</label>
+                <input
+                  class="form-group__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ej: Juan Pérez"
+                  autocomplete="name"
+                  required
+                />
+                <span class="form-group__error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-group__label" for="email">Correo electrónico</label>
+                <input
+                  class="form-group__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ej: juan@email.com"
+                  autocomplete="email"
+                  required
+                />
+                <span class="form-group__error" id="emailError" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-group__label" for="message">Mensaje</label>
+                <textarea
+                  class="form-group__input form-group__input--textarea"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="¿En qué podemos ayudarte?"
+                ></textarea>
+                <span class="form-group__error" id="messageError" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+
+              <div class="contact__success" id="formSuccess" aria-live="polite" hidden>
+                ✅ ¡Mensaje enviado! Te contactamos pronto.
+              </div>
+
+            </form>
+          </div>
+
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📍</span>
+              <div>
+                <h4 class="contact__info-label">Dirección</h4>
+                <p class="contact__info-value">Av. Centenario 1234, Buenos Aires</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📞</span>
+              <div>
+                <h4 class="contact__info-label">Teléfono</h4>
+                <p class="contact__info-value">+54 11 2655-3042</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">✉️</span>
+              <div>
+                <h4 class="contact__info-label">Email</h4>
+                <p class="contact__info-value">andressanroman.dev@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">🕐</span>
+              <div>
+                <h4 class="contact__info-label">Horarios</h4>
+                <p class="contact__info-value">Lun – Vie: 7:00 – 23:00</p>
+                <p class="contact__info-value">Sáb: 9:00 – 18:00</p>
+                <p class="contact__info-value">Dom: CERRADO</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Wsp contact-->
+
+    <div class="wsp-container">
+      <a class="wsp-contact" href="#" >
+      <p class="wsp-eyebrow">Chatea con nosotros!</p>
+        <img src="/img/wsp-img.png" class="wsp-img" alt="Logo de Whatsapp"> 
+      </a>
+    </div>
+
+  <!-- ================ FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__container">
+
+      <div class="footer__brand">
+        <span class="footer__logo">Gimnasio <strong>San Roman</strong></span>
+        <p class="footer__tagline">Forjando campeones desde 2009.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación del pie">
+        <ul class="footer__nav-list">
+          <li><a href="#inicio"   class="footer__nav-link">Inicio</a></li>
+          <li><a href="#clases"   class="footer__nav-link">Clases</a></li>
+          <li><a href="#nosotros" class="footer__nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="footer__nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path>
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; <span id="footerYear"></span> Gimnasio San Roman. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
